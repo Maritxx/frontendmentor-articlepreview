@@ -149,10 +149,12 @@ h1 {
 		float: left;
 		width: 35%;
 		margin-right: 40px;
+		min-height: unset;
 	}
 	
 	.article-content__box {
 		height: 260px;
+		min-height: unset;
 	}
 
 	.article-information__box {
