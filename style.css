@@ -56,7 +56,6 @@ h1 {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-
 	min-height: calc(40vh - 110px);
 }
 
@@ -137,7 +136,11 @@ h1 {
 	.article__holder {
 		display: flex;
 	}
-	
+
+	.article-image__box {
+		
+	}
+
 }
 
 
