@@ -38,14 +38,26 @@ h1 {
 
 /*Article Section*/
 .article__holder {
+	display: flex;
+	flex-direction: column;
+	padding: 50px 30px 20px;
 	background-color: var(--bg-secondary);
 	border-radius: 20px;
 	overflow: hidden;
 } 
 
+.article-image__box {
+	flex: 0 1 40%;
+}
+
+.article-content__box {
+	flex: 0 1 50%;
+}
+
 .article-information__box {
 	display: flex;
 	align-content: center;
+	flex: 0 1 10%;
 }
 
 .some-button {
@@ -64,14 +76,18 @@ h1 {
 
 
 /*Share Button Section*/
-.popup__box {
+.article-information__box {
+	position: relative;
+}
+
+.article-information__box .popup__box {
 	visibility: hidden;
 	background-color: var(--heading-primary);
 	display: flex;
 	z-index: 1;
 }
 
-.popup__box .active {
+.article-information__box .active {
 	visibility: visible;
 }
 
