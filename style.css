@@ -11,7 +11,7 @@ body {
 	min-height: calc(100vh - 35px);
 	max-width: 860px;
 	margin: 0 auto;
-	padding: 75px 25px; 
+	margin: 75px 25px; 
 }
 
 /*Font Styles*/
@@ -51,7 +51,6 @@ h1 {
 .article__holder {
 	background-color: var(--bg-secondary);
 	border-radius: 20px;
-	overflow: hidden;
 } 
 
 .article-image__box {
@@ -60,6 +59,8 @@ h1 {
 	background-repeat: no-repeat;
 	background-position: center center;
 	min-height: calc(40vh - 110px);
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
 }
 
 .article-content__box {
@@ -112,6 +113,8 @@ h1 {
 	height: 100%;
 	margin-left: -40px;
 	padding:30px 40px;
+	border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .article-information__box .active {
@@ -142,6 +145,7 @@ h1 {
 
 	.wrapper {
 		min-height: unset;
+		margin: 75px 125px;
 	}
 
 	.article-image__box {
@@ -150,6 +154,8 @@ h1 {
 		width: 35%;
 		margin-right: 40px;
 		min-height: unset;
+		border-bottom-left-radius: 20px;
+		border-top-right-radius: unset;
 	}
 	
 	.article-content__box {
@@ -176,18 +182,17 @@ h1 {
 		margin-left: -150px;
 		border-radius: 10px;
 		padding: 10px;
-		margin-left: unset;
 	}
 
 	.article-information__box .popup__box::after {
 		content: "";
   		position: absolute;
  		top: 100%;
-  		left: 10%;
-  		margin-left: -5px;
-  		border-width: 5px;
+  		left: 50%;
+  		margin-left: -10px;
+  		border-width: 8px;
   		border-style: solid;
-  		border-color: var(--heading-primary);
+  		border-color: var(--heading-primary) transparent transparent transparent;
 	}
 }
 
