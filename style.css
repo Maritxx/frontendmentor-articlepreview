@@ -5,7 +5,7 @@ body {
 }
 
 .wrapper {
-	min-height: calc(100vh - 31px);
+	min-height: calc(100vh - 35px);
 	max-width: 960px;
 	margin: 0 auto;
 	padding: 75px 25px; 
@@ -47,26 +47,27 @@ h1 {
 
 /*Article Section*/
 .article__holder {
-	display: flex;
-	flex-direction: column;
 	background-color: var(--bg-secondary);
 	border-radius: 20px;
 	overflow: hidden;
 } 
 
 .article-image__box {
-	flex: 0 1 40%;
+	background-image: url("img/drawers.jpg")
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: calc(40vh - 110px);
 }
 
 .article-content__box {
-	flex: 0 1 50%;
+	min-height: calc(50vh - 110px);
 	padding: 50px 30px 20px;
 }
 
 .article-information__box {
+	min-height: calc(10vh - 110px);
 	display: flex;
 	align-items: center;
-	flex: 0 1 10%;
 }
 
 .author-info__holder {
